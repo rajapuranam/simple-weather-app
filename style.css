@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+    color: #232323;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading{
+    font-size: 50px;
+    letter-spacing: 0.02em;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form input {
+  font-size: 25px;
+  height: 40px;
+  padding: 5px 5px 10px;
+  border-bottom: 1px solid;
+}
+
+form input::placeholder {
+  color: #232323; 
+}
+
+form button {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 10px 15px;
+  margin-left: 15px;
+  border-radius: 5px;
+  /*background: rgb(47,150,163);*/
+  border: 1.5px solid #232323;
+  transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+  background: #ffffff;
+  color: #232323;
+}
+
+.location,.temperature{
+    
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location{
+    height: 30vh;
+}
+
+.temperature{
+    height: 20vh;
+}
+
+.temperature{
+    flex-direction: row;
+}
+
+.temperature-description{
+    font-size: 30px;
+}
+
+.degree-section{
+    display: flex;
+    align-items: center;
+}
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+}
+.degree-section h2{
+    font-size: 40px;
+}

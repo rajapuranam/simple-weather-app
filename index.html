@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="heading">Simple Weather App</h1>
+    <form>
+        <input type="text" placeholder="Search for a city" id="tosearch" autofocus/>
+        <button class="submit">SUBMIT</button>
+    </form>
+    <div class="location">
+        <h1 class="location-timezone">City</h1>
+        <!-- <p class="icon">icon</p> -->
+        <img src="#" class="icon">
+        <div class="temperature-description">-</div>
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <h2 class="temperature-degree" id="kel"></h2>
+            <span>&deg;K</span>
+        </div>
+        <div class="degree-section">
+            <h2 class="temperature-degree" id="cel"></h2>
+            <span>&deg;C</span>
+        </div>
+        <div class="degree-section">
+            <h2 class="temperature-degree" id="faren"></h2>
+            <span>&deg;F</span>
+        </div>
+    </div>
+    
+
+    <!-- API_KEY is stored in ./keys.js  file -->
+    <!-- and used in ./app.js file -->
+    <script src="./keys.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
